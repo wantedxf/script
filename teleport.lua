@@ -1,8 +1,7 @@
 Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
-
 		local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-
-        	NotifyLib.prompt('wanteds teleport', 'welcome', 5)
+        	NotifyLib.prompt('wanted#3334', 'welcome', 5)
+        	
 
 local savedPosition = nil
 
@@ -54,6 +53,7 @@ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
             ClickableWhenViewportHidden = true,
             Position = UDim2.new(0, 10, 1, -110),
             AnchorPoint = Vector2.new(0, 1)
+            })
         end
     end
 end)
