@@ -203,12 +203,15 @@ local tp = NotificationParent
 
 function prompt(title, text, closeTime, close)
 	local Prompt = Notification:Clone()
+	local Sound = Instance.new('Sound', Notification)
 
 	Prompt.Visible = true
 	Prompt.Container.Top.Title.Text = title
 	Prompt.Container.Body.Content.Text = text
 
 	Prompt.Parent = NotificationParent
+	Sound.SoundId = ""
+	Sound:Play()
 
 	T:Create(Prompt.Container, t, {Position = UDim2.new(0, 0, 0, 0)}):Play()
 
