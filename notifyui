@@ -211,7 +211,6 @@ function prompt(title, text, closeTime, close)
 
 	Prompt.Parent = NotificationParent
 	Sound.SoundId = ""
-	Sound:Play()
 
 	T:Create(Prompt.Container, t, {Position = UDim2.new(0, 0, 0, 0)}):Play()
 
@@ -230,8 +229,6 @@ function prompt(title, text, closeTime, close)
 	Prompt.Container.Top.Exit.Visible = close
 
 	wait(1)
-
-	Sound:Destroy()
 	
 	spawn(function()
 		if typeof(closeTime) == "number" then
