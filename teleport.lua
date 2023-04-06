@@ -32,8 +32,9 @@ end)
 
 game.Players.LocalPlayer.Chatted:Connect(function(message)
     if message == "0" then
-        	NotifyLib.prompt('wanted#3334', 'cleared position', 1)
-        
 	savePosition = nil
+	clearsavePosition()
+	
+        	NotifyLib.prompt('wanted#3334', 'cleared position', 1)
     end
 end)
