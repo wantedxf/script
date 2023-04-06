@@ -1,5 +1,5 @@
 Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
-		local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
+		local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/wantedxf/script/main/notifyui"))()
         	NotifyLib.prompt('wanted#3334', 'welcome', 5)
         	
 
@@ -25,7 +25,7 @@ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
         else
             savePosition()
                 
-        	NotifyLib.prompt('wanted#3334', 'osition saved', 4)
+        	NotifyLib.prompt('wanted#3334', 'position saved', 4)
         end
     end
 end)
