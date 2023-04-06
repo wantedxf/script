@@ -20,7 +20,7 @@ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
         if savedPosition then
             teleportToSavedPosition()
             
-        	NotifyLib.prompt('wanted#3334', 'teleported', 1)
+        	NotifyLib.prompt('wanted#3334', 'teleported', 0.5)
     
         else
             savePosition()
@@ -31,7 +31,7 @@ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 end)
 
 game.Players.LocalPlayer.Chatted:Connect(function(message)
-    if message == "0" then
+    if message == ";clear" then
 	clearSavedPosition()
 	
         	NotifyLib.prompt('wanted#3334', 'cleared position', 1)
