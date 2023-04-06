@@ -20,61 +20,19 @@ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
         if savedPosition then
             teleportToSavedPosition()
             
-            game.StarterGui:SetCore("SendNotification", {
-            Title = "wanted#3334",
-            Text = "Teleported",
-            Duration = 2,
-            Icon = nil,
-            Button1 = "OK",
-            Button2 = "",
-            Callback = nil,
-            Enabled = true,
-            Badge = nil,
-            Transparency = 0.5,
-            ClickableWhenViewportHidden = true,
-            Position = UDim2.new(0, 10, 1, -110),
-            AnchorPoint = Vector2.new(0, 1)
-        })
+        	NotifyLib.prompt('wanted#3334', 'teleported', 1)
     
         else
             savePosition()
                 
-                game.StarterGui:SetCore("SendNotification", {
-            Title = "wanted#3334",
-            Text = "Position Saved",
-            Duration = 2,
-            Icon = nil,
-            Button1 = "OK",
-            Button2 = "",
-            Callback = nil,
-            Enabled = true,
-            Badge = nil,
-            Transparency = 0.5,
-            ClickableWhenViewportHidden = true,
-            Position = UDim2.new(0, 10, 1, -110),
-            AnchorPoint = Vector2.new(0, 1)
-            })
+        	NotifyLib.prompt('wanted#3334', 'osition saved', 4)
         end
     end
 end)
 
 game.Players.LocalPlayer.Chatted:Connect(function(message)
     if message == "0" then
-        game.StarterGui:SetCore("SendNotification", {
-            Title = "wanted#3334",
-            Text = "Position cleared",
-            Duration = 2,
-            Icon = nil,
-            Button1 = "OK",
-            Button2 = "",
-            Callback = nil,
-            Enabled = true,
-            Badge = nil,
-            Transparency = 0.5,
-            ClickableWhenViewportHidden = true,
-            Position = UDim2.new(0, 10, 1, -110),
-            AnchorPoint = Vector2.new(0, 1)
-        })
+        	NotifyLib.prompt('wanted#3334', 'cleared position', 1)
         
         clearSavedPosition()
     end
