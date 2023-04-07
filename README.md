@@ -26,7 +26,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/wantedxf/script/main/
      |||( ( '_)_  .l   ". _    ..__I     |  L
      ^\\\||`'   "   '"-. " )''`'---'     L.-'`-.._
           \ |           ) /.              ``'`-.._``-.
-          l l          / / |    doxed by wanted   |''|
+          l l          / / |    made by wanted    |''|
            " \        / /   "-..__                |  |
            | |       / /          1       ,- t-...J_.'
            | |      / /           |       |  |
