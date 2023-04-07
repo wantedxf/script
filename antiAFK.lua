@@ -33,7 +33,7 @@ end)
 game.Players.LocalPlayer.Chatted:Connect(function(message)
 	if message == "rem" then
         
-        NotifyLib.prompt('wanted#3334', 'Thank you for using wanteds AntiAFK, bye', 5
+        NotifyLib.prompt('wanted#3334', 'Thank you for using wanteds AntiAFK, bye', 5)
 	injected = false
 	end
 
@@ -51,3 +51,4 @@ while true do
     end
     wait(3)
 end
+end)
