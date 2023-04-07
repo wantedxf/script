@@ -19,24 +19,25 @@ game.Players.LocalPlayer.Chatted:Connect(function(message)
         print("afked")
         NotifyLib.prompt('wanted#3334', 'AntiAFK enabled', 5)
 			
-	elseif message == "!" and afk = true then 
+	elseif message == "!" and afk then 
 	
         afk = false
         print("unafk")
         NotifyLib.prompt('wanted#3334', 'AntiAFK disabled', 5)
 	
-	else if message == "!" and afk = true then 
+	else if message == "!" then 
 				
 	afk = false
         print("unafk")
         NotifyLib.prompt('wanted#3334', 'AntiAFK is already disabled', 5)
 				
 	end
-end)
+end
 
 while true do
     if afk then
         AntiAFK()
     end
     wait(3)
-end
+    end
+end)
