@@ -18,24 +18,15 @@ game.Players.LocalPlayer.Chatted:Connect(function(message)
         afk = true
         print("afked")
         NotifyLib.prompt('wanted#3334', 'AntiAFK enabled', 5)
-	end
-end)
-
-game.Players.LocalPlayer.Chatted:Connect(function(message)
-	if message == "!" then
-        
+			
+	elseif message == "!" then 
+	
         afk = false
         print("unafk")
         NotifyLib.prompt('wanted#3334', 'AntiAFK disabled', 5)
+			
 	end
 end)
-
-game.Players.LocalPlayer.Chatted:Connect(function(message)
-	if message == "rem" then
-        
-        NotifyLib.prompt('wanted#3334', 'Thank you for using wanteds AntiAFK, bye', 5)
-	injected = false
-	end
 
 while true do
     if afk then
@@ -43,12 +34,3 @@ while true do
     end
     wait(3)
 end
-			
-while true do
-    if injected then
-	else
-	script:Destroy()
-    end
-    wait(3)
-end
-end)
