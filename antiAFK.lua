@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/wantedxf/script/main/notifyui"))()
 local afk = false
-NotifyLib.prompt('wanted#3334', 'welcome', 5)
+NotifyLib.prompt('wanted#3334', 'welcome to wanteds anti afk', 5)
 
 local players = game:GetService("Players")
 local player = players.LocalPlayer
